@@ -20,4 +20,4 @@ module load parallel_hdf5/1.10.3
 module load fftw/3.3.7
 module load gsl/2.4
 
-mpirun -np 2 /path/to/SWIFT/swift_mpi --self-gravity --cosmology --threads=8 -v 1 params.yml 2>&1 | tee output.log
+mpirun -np 2 /cosma/home/durham/dc-rive1/SWIFT/swift_mpi --self-gravity --cosmology --threads=8 -v 1 params.yml 2>&1 | tee output.log
