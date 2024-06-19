@@ -1,0 +1,17 @@
+Default:
+  # Particle Type DM
+  Coordinates_DM: DScale5
+  Velocities_DM: DScale1
+  Masses_DM: on
+  ParticleIDs_DM: on
+  Softenings_DM: off
+
+  # Particle Type Neutrino
+  Coordinates_Neutrino: DScale5
+  Velocities_Neutrino: DScale1
+  Masses_Neutrino: on
+  ParticleIDs_Neutrino: on
+  Softenings_Neutrino: off
+  SampledSpeeds_Neutrino: off
+  MicroscopicMasses_Neutrino: off
+

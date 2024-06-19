@@ -1,0 +1,63 @@
+InternalUnitSystem:
+  UnitMass_in_cgs:      1.9884350000e+43
+  UnitLength_in_cgs:    3.0856775815e+24
+  UnitVelocity_in_cgs:  1.0000000000e+05
+  UnitCurrent_in_cgs:   1.0000000000e+00
+  UnitTemp_in_cgs:      1.0000000000e+00
+
+Cosmology:
+  h:              0.681
+  a_begin:        0.03125
+  a_end:          1.0
+  Omega_cdm:      0.256011
+  Omega_lambda:   0.693922
+  Omega_b:        0.048600
+  T_nu_0:         1.9517578050
+  N_ur:           2.0308
+  N_nu:           1
+  M_nu_eV:        0.06
+  deg_nu:         1.0
+
+TimeIntegration:
+  dt_min:       1.0000e-10
+  dt_max:       1.0000e-02
+
+Snapshots:
+  output_list_on:       1
+  output_list:          output_times.txt
+  basename:             box
+  compression:          4
+  use_delta_from_edge:  1     # Lossy compression demands we shift things a tiny bit to avoid out-of-box rounding.
+  delta_from_edge:      1e-5  # (Internal units) We shift by 10pc.
+  select_output_on:     1
+  select_output:        output_fields.yml
+
+Statistics:
+  delta_time:           1.2500
+
+Restarts:
+  delta_hours:  7.90 # so that we have a restart just before 24hrs
+
+InitialConditions:
+  file_name:    /path/to/ICs/ics.hdf5
+  periodic:     1
+
+Gravity:
+  mesh_side_length:     256
+  MAC:                  adaptive
+  epsilon_fmm:          0.001
+  eta:                  0.02500
+  theta_cr:             0.70000
+  use_tree_below_softening: 0
+  rebuild_frequency:    0.01
+  comoving_DM_softening:     0.0223
+  max_physical_DM_softening: 0.0057
+  comoving_nu_softening:     0.0223
+  max_physical_nu_softening: 0.0057
+
+Neutrino:
+  use_delta_f_mesh_only: 1
+
+DomainDecomposition:
+  trigger:          0.1
+
