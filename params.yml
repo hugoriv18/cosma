@@ -39,7 +39,7 @@ Restarts:
   delta_hours:  7.90 # so that we have a restart just before 24hrs
 
 InitialConditions:
-  file_name:    /path/to/ICs/ics.hdf5
+  file_name:    /cosma5/data/durham/dc-rive1/monofonic/ics_swift.hdf5
   periodic:     1
 
 Gravity:
