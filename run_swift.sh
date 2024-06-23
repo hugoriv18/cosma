@@ -11,7 +11,7 @@
 #SBATCH -o std_%j.out # Output file
 #SBATCH -e stderr_%j.err # Error file
 #SBATCH --mail-type=ALL # Notification when job ends (done or failed)
-#SBATCH --mail-user=???? # Where to send email notifications
+#SBATCH --mail-userhugorivera@estudiantes.fisica.unam.mx # Where to send email notifications
 
 module purge
 module load intel_comp/2018
