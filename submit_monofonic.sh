@@ -21,4 +21,4 @@ module load fftw/3.3.7
 module load gsl/2.4
 module load cmake/3.11.4
 
-mpirun -np 4 /cosma5/data/durham/dc-rive1/monofonic gen.conf
+mpirun -np 4 /cosma5/data/durham/dc-rive1/monofonic/build/monofonIC gen.conf
